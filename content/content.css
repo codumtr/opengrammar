@@ -1,0 +1,227 @@
+/* OpenGrammar - Canlı Asistan Arayüzü */
+
+.opengrammar-badge {
+  position: absolute;
+  z-index: 999999;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.opengrammar-badge:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.6);
+}
+
+.opengrammar-badge.has-issues {
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  box-shadow: 0 2px 12px rgba(239, 68, 68, 0.4);
+}
+
+.opengrammar-badge.is-clean {
+  background: linear-gradient(135deg, #10b981, #059669);
+  box-shadow: 0 2px 10px rgba(16, 185, 129, 0.4);
+}
+
+.opengrammar-badge-icon {
+  width: 14px;
+  height: 14px;
+  color: #ffffff;
+}
+
+.opengrammar-badge-count {
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Öneri Kartı (Popover / Modal) */
+.opengrammar-card {
+  position: absolute;
+  z-index: 1000000;
+  width: 320px;
+  max-height: 420px;
+  background: #0f172a;
+  color: #f8fafc;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 14px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(99, 102, 241, 0.2);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: opengrammar-pop 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes opengrammar-pop {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.opengrammar-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: rgba(30, 41, 59, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.opengrammar-card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #c084fc;
+}
+
+.opengrammar-card-close {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opengrammar-card-close:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.opengrammar-card-body {
+  padding: 12px;
+  overflow-y: auto;
+  max-height: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.opengrammar-issue-item {
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.opengrammar-issue-words {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.opengrammar-original {
+  color: #f87171;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.opengrammar-arrow {
+  color: #64748b;
+}
+
+.opengrammar-suggestion {
+  color: #34d399;
+  font-weight: 700;
+}
+
+.opengrammar-issue-reason {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.opengrammar-issue-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.opengrammar-btn-apply {
+  background: #6366f1;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.opengrammar-btn-apply:hover {
+  background: #4f46e5;
+}
+
+.opengrammar-btn-dismiss {
+  background: transparent;
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.opengrammar-btn-dismiss:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.opengrammar-empty {
+  text-align: center;
+  padding: 24px 10px;
+  color: #34d399;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* AI Hızlı Aksiyonlar */
+.opengrammar-card-ai {
+  padding: 8px 12px;
+  background: rgba(15, 23, 42, 0.9);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+}
+
+.opengrammar-ai-pill {
+  background: rgba(168, 85, 247, 0.15);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.opengrammar-ai-pill:hover {
+  background: #a855f7;
+  color: #ffffff;
+}

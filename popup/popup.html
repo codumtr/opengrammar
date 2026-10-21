@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenGrammar</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <img src="../icons/icon32.png" alt="OpenGrammar" class="brand-icon">
+        <div class="brand-title">
+          <h1>OpenGrammar</h1>
+          <span class="badge">Açık Kaynak</span>
+        </div>
+      </div>
+      <a href="../options/options.html" target="_blank" class="icon-btn" title="Ayarlar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+        </svg>
+      </a>
+    </header>
+
+    <!-- Hızlı Test / Yazım Alanı -->
+    <div class="editor-section">
+      <textarea id="testInput" placeholder="Metninizi buraya yazın veya yapıştırın (Türkçe & İngilizce)..."></textarea>
+      <div class="editor-meta">
+        <span id="charCount">0 karakter</span>
+        <span class="status-clean" id="editorStatus">✨ Temiz</span>
+      </div>
+    </div>
+
+    <!-- Hata ve Öneri Listesi -->
+    <div class="suggestions-box" id="suggestionsBox">
+      <!-- Dinamik doldurulur -->
+    </div>
+
+    <!-- Hızlı Araçlar -->
+    <div class="action-tools">
+      <button class="tool-btn" id="btnFixAll" title="Tüm hataları tek tıkla düzelt">⚡ Hepsini Düzelt</button>
+      <button class="tool-btn" id="btnFormal" title="Resmi ve kurumsal dille yaz">💼 Resmi Yap</button>
+      <button class="tool-btn" id="btnClear" title="Metni temizle">🗑️ Temizle</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-left">
+        <span class="active-dot"></span>
+        <span>Canlı Koruma Aktif</span>
+      </div>
+      <a href="https://github.com/codumtr" target="_blank" class="github-badge">CODUM.TR</a>
+    </footer>
+  </div>
+
+  <script src="../engine/engine.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

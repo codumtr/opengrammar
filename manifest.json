@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "OpenGrammar - Akıllı Türkçe & İngilizce İmla Asistanı",
+  "short_name": "OpenGrammar",
+  "version": "1.0.0",
+  "description": "Grammarly alternatifi, %100 gizlilik odaklı, çevrimdışı çalışan Türkçe ve İngilizce imla, dilbilgisi ve yapay zeka yazım asistanı.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "OpenGrammar İmla Asistanı",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["content/content.css"],
+      "js": ["engine/engine.js", "content/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  }
+}
