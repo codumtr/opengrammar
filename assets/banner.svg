@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Glowing Orbs -->
+    <radialGradient id="purpleGlow" cx="20%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="fuchsiaGlow" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#d946ef" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#d946ef" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Card Background -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="50%" stop-color="#e879f9" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Button Gradient -->
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+    <filter id="badgeShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#8b5cf6" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="520" fill="url(#bgGrad)" />
+  <rect width="1200" height="520" fill="url(#purpleGlow)" />
+  <rect width="1200" height="520" fill="url(#fuchsiaGlow)" />
+
+  <!-- Subtle Grid Lines -->
+  <g stroke="rgba(255, 255, 255, 0.03)" stroke-width="1">
+    <line x1="0" y1="80" x2="1200" y2="80" />
+    <line x1="0" y1="160" x2="1200" y2="160" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="320" x2="1200" y2="320" />
+    <line x1="0" y1="400" x2="1200" y2="400" />
+    <line x1="160" y1="0" x2="160" y2="520" />
+    <line x1="320" y1="0" x2="320" y2="520" />
+    <line x1="480" y1="0" x2="480" y2="520" />
+    <line x1="640" y1="0" x2="640" y2="520" />
+    <line x1="800" y1="0" x2="800" y2="520" />
+    <line x1="960" y1="0" x2="960" y2="520" />
+  </g>
+
+  <!-- Left Hero Section -->
+  <g transform="translate(80, 110)">
+    <!-- Pill Tag -->
+    <rect x="0" y="0" width="220" height="32" rx="16" fill="rgba(168, 85, 247, 0.15)" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1" />
+    <circle cx="16" cy="16" r="4" fill="#10b981" />
+    <text x="28" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#e9d5ff" letter-spacing="0.5">OPEN-SOURCE &amp; FREE</text>
+
+    <!-- Main Title -->
+    <text x="0" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="52" font-weight="900" fill="url(#textGrad)" letter-spacing="-1.5">OpenGrammar</text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="130" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="500" fill="#cbd5e1" letter-spacing="-0.2">Akıllı Türkçe &amp; İngilizce İmla, Dilbilgisi ve AI Asistanı</text>
+    <text x="0" y="156" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400" fill="#94a3b8">The Privacy-First, Offline &amp; Free Grammarly Alternative</text>
+
+    <!-- Feature Badges -->
+    <g transform="translate(0, 195)">
+      <!-- Badge 1 -->
+      <rect x="0" y="0" width="135" height="34" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.08)" />
+      <text x="14" y="22" font-family="sans-serif" font-size="13" fill="#f8fafc">🇹🇷 Türkçe İmla</text>
+
+      <!-- Badge 2 -->
+      <rect x="145" y="0" width="135" height="34" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.08)" />
+      <text x="160" y="22" font-family="sans-serif" font-size="13" fill="#f8fafc">🔒 %100 Gizlilik</text>
+
+      <!-- Badge 3 -->
+      <rect x="290" y="0" width="145" height="34" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.08)" />
+      <text x="306" y="22" font-family="sans-serif" font-size="13" fill="#f8fafc">⚡ Sıfır Gecikme</text>
+
+      <!-- Badge 4 -->
+      <rect x="445" y="0" width="135" height="34" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.08)" />
+      <text x="460" y="22" font-family="sans-serif" font-size="13" fill="#f8fafc">🤖 Gemini AI</text>
+    </g>
+  </g>
+
+  <!-- Right Side Interactive UI Mockup -->
+  <g transform="translate(680, 80)" filter="url(#shadow)">
+    <!-- Browser/Editor Card Window -->
+    <rect width="460" height="340" rx="16" fill="url(#cardGrad)" stroke="rgba(168, 85, 247, 0.3)" stroke-width="1.5" />
+
+    <!-- Window Header -->
+    <rect width="460" height="42" rx="16" fill="#1e293b" />
+    <circle cx="24" cy="21" r="5" fill="#ef4444" />
+    <circle cx="40" cy="21" r="5" fill="#f59e0b" />
+    <circle cx="56" cy="21" r="5" fill="#10b981" />
+    <text x="230" y="26" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#94a3b8">compose.email — OpenGrammar Live</text>
+
+    <!-- Simulated Text Input Area -->
+    <g transform="translate(24, 65)">
+      <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#e2e8f0" line-height="1.6">
+        <tspan x="0" y="24">Merhaba,</tspan>
+        <tspan x="0" y="60">Bu projede </tspan>
+        <tspan fill="#fca5a5" font-weight="600">hiç bir</tspan>
+        <tspan> hata olmayacak, </tspan>
+        <tspan fill="#fca5a5" font-weight="600">herşey</tspan>
+        <tspan x="0" y="96">kusursuz şekilde </tspan>
+        <tspan fill="#fca5a5" font-weight="600">hazırmı</tspan>
+        <tspan>?</tspan>
+      </text>
+
+      <!-- Red Squiggly Error Underlines -->
+      <!-- Under 'hiç bir' -->
+      <path d="M78 66 Q83 69 88 66 T98 66 T108 66 T118 66 T128 66" stroke="#ef4444" stroke-width="2.5" fill="none" />
+      <!-- Under 'herşey' -->
+      <path d="M256 66 Q261 69 266 66 T276 66 T286 66 T296 66 T306 66" stroke="#ef4444" stroke-width="2.5" fill="none" />
+      <!-- Under 'hazırmı' -->
+      <path d="M124 102 Q129 105 134 102 T144 102 T154 102 T164 102 T174 102" stroke="#ef4444" stroke-width="2.5" fill="none" />
+    </g>
+
+    <!-- Grammarly-Style Popover Suggestion Card -->
+    <g transform="translate(140, 150)" filter="url(#shadow)">
+      <rect width="280" height="150" rx="12" fill="#0f172a" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1.5" />
+      
+      <!-- Card Header -->
+      <text x="16" y="26" font-family="sans-serif" font-size="11" font-weight="700" fill="#c084fc">YAZIM ÖNERİSİ (1 / 3)</text>
+      <text x="250" y="26" font-family="sans-serif" font-size="12" fill="#64748b">✕</text>
+      <line x1="0" y1="36" x2="280" y2="36" stroke="rgba(255,255,255,0.06)" />
+
+      <!-- Word Comparison -->
+      <text x="16" y="64" font-family="sans-serif" font-size="15" fill="#f87171" text-decoration="line-through">hiç bir</text>
+      <text x="75" y="64" font-family="sans-serif" font-size="14" fill="#94a3b8">➔</text>
+      <text x="100" y="64" font-family="sans-serif" font-size="16" font-weight="800" fill="#34d399">hiçbir</text>
+
+      <text x="16" y="86" font-family="sans-serif" font-size="11" fill="#94a3b8">Belgisiz sıfat olan "hiçbir" bitişik yazılır.</text>
+
+      <!-- Action Button -->
+      <rect x="16" y="104" width="90" height="30" rx="6" fill="url(#btnGrad)" />
+      <text x="61" y="123" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Düzelt</text>
+
+      <rect x="114" y="104" width="75" height="30" rx="6" fill="transparent" stroke="rgba(255,255,255,0.15)" />
+      <text x="151" y="123" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="500" fill="#94a3b8">Yoksay</text>
+    </g>
+
+    <!-- Floating Assistant Badge in Corner -->
+    <g transform="translate(405, 285)" filter="url(#badgeShadow)">
+      <circle cx="16" cy="16" r="18" fill="url(#btnGrad)" />
+      <text x="16" y="21" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="800" fill="#ffffff">3</text>
+    </g>
+  </g>
+</svg>
